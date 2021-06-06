@@ -56,5 +56,5 @@ Then make a maximum likelihood tree with bootstraps (bb); using this setting [iq
 
 `iqtree -s all_aligned_sorted.txt -st DNA -m TEST -bb 1000 -alrt 1000 -nt AUTO`
 
-Suggested viewing platform is FigTree [website here](http://tree.bio.ed.ac.uk/software/figtree/)
+Suggested viewing platform is [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
 
