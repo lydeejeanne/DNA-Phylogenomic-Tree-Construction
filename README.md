@@ -1,6 +1,6 @@
 # DNA Phylogenomic Tree Construction
 ## General Workflow to generate a Phylogenomic tree by transfering orthofinder results (protien) to DNA before generating a maximum likelyhood tree
-#### Orthofinder generates it's own trees, but they are based on protein sequences generated using annotation pipelines (prokka, RAST, etc). But for bacteria and other organisms, these may be inaccurate to what you're actually seeing in the process of evolution. This is a step-by-step tutorial on how to generate a Phylogenomic tree from orthologous proteins in their DNA form
+### Orthofinder generates it's own trees, but they are based on protein sequences generated using annotation pipelines (prokka, RAST, etc). But for bacteria and other organisms, these may be inaccurate to what you're actually seeing in the process of evolution. This is a step-by-step tutorial on how to generate a Phylogenomic tree from orthologous proteins in their DNA form
 
 ### Generating Orthologs 
 Annotate using your program of choice, this is for [prokka](https://github.com/tseemann/prokka)
@@ -20,7 +20,7 @@ You want to combine all of the annotated protein sequences in DNA form so you ca
 
 `for f in *.ffn; do cat * > all_dna.seq`
 
-#### Then you can use that to pull the sequences of interest out using [seqtk](https://github.com/lh3/seqtk)  
+Then you can use that to pull the sequences of interest out using [seqtk](https://github.com/lh3/seqtk)  
 
 `for f in *_index.txt; do b=${f%_index.txt}; seqtk subseq all_dna.seq $f > ${b}.dna; done`
 
