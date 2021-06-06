@@ -1,6 +1,7 @@
 # DNA Phylogenomic Tree Construction
-## General Workflow to generate a Phylogenomic tree by transfering orthofinder results (protien) to DNA before generating a maximum likelyhood tree
-### Orthofinder generates it's own trees, but they are based on protein sequences generated using annotation pipelines (prokka, RAST, etc). But for bacteria and other organisms, these may be inaccurate to what you're actually seeing in the process of evolution. This is a step-by-step tutorial on how to generate a Phylogenomic tree from orthologous proteins in their DNA form
+### General Workflow to generate a Phylogenomic tree by transfering orthofinder results (protien) to DNA before generating a maximum likelyhood tree
+
+Orthofinder generates it's own trees, but they are based on protein sequences generated using annotation pipelines (prokka, RAST, etc). But for bacteria and other organisms, these may be inaccurate to what you're actually seeing in the process of evolution. This is a step-by-step tutorial on how to generate a Phylogenomic tree from orthologous proteins in their DNA form
 
 ### Generating Orthologs 
 Annotate using your program of choice, this is for [prokka](https://github.com/tseemann/prokka)
